@@ -1,0 +1,408 @@
+body {
+    background-image: url('../recursos/fondoberry2.png');
+    background-size: cover; 
+    background-position: center; 
+}
+.tarjetabg{
+    background-image: url(../recursos/FondoBerryTarjeta.png);
+}
+/* ----------INDEX---------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto; 
+}
+.TituloInicio{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    font-family: "Quicksand", sans-serif;
+}
+.TextoInicio{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+.navbar{
+padding: 0%;
+
+}
+.TextoInicio2{
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+.imagenindex2{
+width: 80%;
+display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin: auto; /* Centra horizontalmente */
+}
+.descargarapp{
+    color: coral;
+    text-align: center;
+}
+.imagenindex3{
+width: 100%;
+}
+/* responsive index para pantallas de moviles; las imagenes tienen buena adaptación. */
+
+@media screen and (max-width: 600px) {
+    .TituloInicio{
+        background-color: #353535;
+    }
+    .TextoInicio {
+        font-size: 16px;
+    }
+
+    .TextoInicio2 {
+        font-size: 16px;
+    }
+    .descargarapp{
+        font-size: 16px;
+    }
+    .derechosreservados{
+        font-size: 12px;
+    }
+    #carouselExampleCaptions{
+        width: 100%;
+    }
+}
+/*----------------- CONTACTO ----------------- */
+.gridContacto {  display: grid;
+    grid-template-columns: 1fr 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2"
+      "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2"
+      "SecciónContacto-1 SecciónContacto-2 SecciónContacto-2 SecciónContacto-2"
+      "SecciónContacto-3 SecciónContacto-3 SecciónContacto-3 SecciónContacto-3";
+  }
+  
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+.SecciónContacto-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SecciónContacto-2 {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+}
+
+.SecciónContacto-3 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+
+#contacto {
+    font-size: 60px;
+    text-align: center;
+    grid-column: 1 / span 4; 
+    color: #b4b1b1;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+}
+
+.contact-form h2 {
+    font-size: 35px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* responsive contacto para pantallas de moviles, cancela el grid, apilando el formulario primero y el texto debajo para mejor visibilidad del sitio. */
+
+@media screen and (max-width: 600px) {
+    
+    .gridContacto {
+        display: block; /* Cambiar a un diseño de bloque */
+    }
+}
+
+/* ----------------- Club Berrycard ----------------- */
+#beneficios {
+    font-size: 60px;
+    text-align: center;
+}
+
+.descuentos {
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+}
+.oferta{
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+/* la imagen siempre ocupara el ancho de la pagina */
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* responsive de beneficios, ajusta el texto a la pagina*/
+@media screen and (max-width: 600px) {
+    #beneficios{
+        font-size: 30px;
+    }
+    .descuentos {
+        font-size: 16px;
+        list-style: none;
+    }
+}
+/* ----------------- TARJETA ----------------- */
+.PediTuBerrycard a {
+    color: red; 
+    text-decoration: none; 
+}
+
+.PediTuBerrycard a:hover {
+    color: rgb(255, 255, 255); 
+}
+.PediTuBerrycard{
+    text-align: center;
+}
+#bodytarjeta {
+    background-color: black;
+}
+
+#PediTuBerrycard {
+    color: red;
+    font-size: 50px;
+}
+.PediTuBerrycard2{
+    text-align: center;
+}
+.PediTuBerrycard2 a{
+    color: red;
+}
+.infoberrycard {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* responsive de beneficios, ajusta el texto a la pagina*/
+@media screen and (max-width: 600px) {
+    .TituloInicio {
+        font-size: 24px;
+    }
+    .infoberrycard {
+        font-size: 16px;
+    }
+}
+.TarjetaMasterBerry{
+ width: 500px; 
+ display: flex;
+ justify-content: center;
+ align-items: center;   
+}
+
+/* ----------------- CRYPTOS ----------------- */
+#cryptos{
+    color: white;
+}
+.cryptomonedas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.cryptomonedas img {
+    width: 150px;
+    border: 2px solid #353535;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cryptomonedas p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#ParrafoCrypto {
+    font-size: 20px;
+    color: gainsboro;
+}
+.cryptomonedas{
+    color: gainsboro;
+}
+.panelCryptos{
+    text-align: center;
+}
+
+
+/* ----------------- ROBO O PERDIDA ----------------- */
+
+.grid {  display: grid;
+    grid-template-columns: 1fr 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Sección-1 Sección-2 Sección-2 Sección-2"
+      "Sección-1 Sección-2 Sección-2 Sección-2"
+      "Sección-1 Sección-2 Sección-2 Sección-2"
+      "Sección-3 Sección-3 Sección-3 Sección-3";
+  }
+  
+  .Sección-1 { grid-area: Sección-1;
+display: flex;
+align-items: center;
+justify-content: center; }
+  
+  .Sección-2 { grid-area: Sección-2; }
+  
+  .Sección-3 { grid-area: Sección-3;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  
+#BodyRoboPerdida {
+    background-color: black;
+}
+
+#perdida-robo {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+
+.BotonesPerdidaRobo button {
+    width: 250px;
+    padding: 50px;
+    display: flexbox;
+    align-items: center;
+}
+
+#TextoPerdidaRobo {
+    color: white;
+    font-size: 20px;
+}
+
+.derechosreservados {
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+/* ----------------- REGISTRO/TARJETA ----------------- */
+.gridResgistro {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "registro login";
+  }
+  
+  .login { grid-area: login;
+ }
+  
+  .registro { grid-area: registro; }
+  
+
+.titulo-registro {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+.registro {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    color: red; 
+    box-sizing: border-box;
+    margin: auto; 
+}
+
+.registro h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.registro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.registro input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    
+    .gridRegistro {
+        flex-direction: column-reverse; 
+    }
+}
+
+/* ------------COTIZACIONES------------ */
+
+.MainCotizaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.cotizaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TituloCotizaciones{
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .cotizaciones {
+        width: 100%; /* O el ancho que desees */
+        
+    }
+}
+
