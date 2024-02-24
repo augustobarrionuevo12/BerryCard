@@ -45,8 +45,8 @@ padding: 0%;
 }
 .imagenindex2{
 width: 80%;
-display: block; /* Asegura que la imagen sea un elemento de bloque */
-    margin: auto; /* Centra horizontalmente */
+display: block; 
+    margin: auto; 
 }
 .descargarapp{
     color: coral;
@@ -74,7 +74,7 @@ width: 100%;
     .derechosreservados{
         font-size: 12px;
     }
-    #carouselExampleCaptions{
+    .navbar{
         width: 100%;
     }
 }
@@ -153,7 +153,7 @@ width: 100%;
 @media screen and (max-width: 600px) {
     
     .gridContacto {
-        display: block; /* Cambiar a un diseño de bloque */
+        display: block;
     }
 }
 
@@ -187,6 +187,7 @@ img{
         font-size: 16px;
         list-style: none;
     }
+    .oferta{font-size: 16px;}
 }
 /* ----------------- TARJETA ----------------- */
 .PediTuBerrycard a {
@@ -238,7 +239,10 @@ img{
 /* ----------------- CRYPTOS ----------------- */
 #cryptos{
     color: white;
+    font-family: "Nabla", system-ui;
+    font-size: 90px;
 }
+
 .cryptomonedas {
     display: flex;
     justify-content: space-between;
@@ -268,7 +272,16 @@ img{
 .panelCryptos{
     text-align: center;
 }
+/* esconde el texto de las imagenes y las achica para decoración y responsive */
+@media screen and (max-width: 600px) {
+    .cryptomonedas img {
+        width: 100px; 
+    }
 
+    .cryptomonedas p {
+        display: none; 
+    }
+}
 
 /* ----------------- ROBO O PERDIDA ----------------- */
 
@@ -325,6 +338,30 @@ justify-content: center; }
 footer {
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+    .grid {
+      display: block;
+    }
+  
+    .Sección-1,
+    .Sección-2,
+    .Sección-3 {
+      width: 100%;
+      padding: 10px; 
+      box-sizing: border-box; 
+    }
+  
+    .BotonesPerdidaRobo button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .card {
+      display: none;
+    }
+  }
+  
+  
 /* ----------------- REGISTRO/TARJETA ----------------- */
 .gridResgistro {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -401,7 +438,7 @@ footer {
 }
 @media screen and (min-width: 600px) {
     .cotizaciones {
-        width: 100%; /* O el ancho que desees */
+        width: 100%; 
         
     }
 }
